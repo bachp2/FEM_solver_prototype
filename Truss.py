@@ -21,7 +21,7 @@ class Truss:
         L  = math.sqrt(x21**2+y21**2)
         c   = x21/L*1.0
         s   = y21/L*1.0
-        return (E*A/L)*np.matrix([[c**2, c*s,-c**2,-c*s],[c*s, s**2,-s*c,-s**2],
+        return (E*A/L)*np.matrix([[c**2, c*s,-c**2,-c*s],[c**2, c*s,-c**2,-c*s],
                               [-c**2,-s*c, c**2, s*c],[-s*c,-s**2, s*c, s**2]
                          ])
     
